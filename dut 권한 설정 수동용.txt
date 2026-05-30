@@ -1,0 +1,43 @@
+# (필수) Android 13 이상 : CTS 인증 도구의 테스트 API 액세스 허용 
+adb -s R5KL309P2KR shell am compat enable ALLOW_TEST_API_ACCESS com.android.cts.verifier
+- Enabled  change 166236554 for com.android.cts.verifier.
+
+# Android 10 이상 : 앱에 보고서를 생성할 권한 허용
+adb -s R5KL309P2KR shell appops set com.android.cts.verifier android:read_device_identifiers allow
+
+# Android 11 이상 : 보고서 저장용 외부 최상위 디렉터리 액세스 허용
+adb -s R5KL309P2KR shell appops set com.android.cts.verifier MANAGE_EXTERNAL_STORAGE 0
+
+# Android 14 이상 : 앱에 화면 켜는 권한을허용
+adb -s R5KL309P2KR shell appops set com.android.cts.verifier TURN_SCREEN_ON 0
+
+
+
+# Start adb
+start_adb_fwd 
+adb forward --list 로 6000 이 나오는지 확인
+
+6000 안나오면 : adb -s [device_id] forward tcp:6000 tcp:6000
+adb -s R5KL309P2KR forward tcp:6000 tcp:6000
+
+hjlim@KORCO131182:~/android-cts-verifier/CameraITS$ source build/envsetup.sh
+
+config 대로 실행 : python tools/run_all_tests.py
+
+선택 인자로 실행 : python tools/run_all_tests.py camera=0 scenes=1_1
+
+==================================
+태블릿 권한 허용
+
+# (필수) Android 13 이상 : CTS 인증 도구의 테스트 API 액세스 허용 
+adb -s R32XB004ZLM shell am compat enable ALLOW_TEST_API_ACCESS com.android.cts.verifier
+- Enabled  change 166236554 for com.android.cts.verifier.
+
+# Android 10 이상 : 앱에 보고서를 생성할 권한 허용
+adb -s R32XB004ZLM shell appops set com.android.cts.verifier android:read_device_identifiers allow
+
+# Android 11 이상 : 보고서 저장용 외부 최상위 디렉터리 액세스 허용
+adb -s R32XB004ZLM shell appops set com.android.cts.verifier MANAGE_EXTERNAL_STORAGE 0
+
+# Android 14 이상 : 앱에 화면 켜는 권한을허용
+adb -s R32XB004ZLM shell appops set com.android.cts.verifier TURN_SCREEN_ON 0

@@ -1,0 +1,329 @@
+    Device 0 maps to "0"
+    Device 1 maps to "1"
+    Device 2 maps to "3"
+  Device 0 is closed, no client instance
+  Device 1 is closed, no client instance
+  Device 2 is closed, no client instance
+  Device 20 is closed, no client instance
+  Device 21 is closed, no client instance
+  Device 23 is closed, no client instance
+  Device 24 is closed, no client instance
+  Device 3 is closed, no client instance
+  Device 4 is closed, no client instance
+  Device 52 is closed, no client instance
+  Device 54 is closed, no client instance
+  Device 56 is closed, no client instance
+  Device 58 is closed, no client instance
+  Device 90 is closed, no client instance
+    0x811d007f (dynamicShotDeviceInfo) with type 3 (int64) defined in section samsung.android.control
+== Device Injector Activity History ==
+  05-20 11:38:07 : Device 0 is open. Client instance dump:
+  CameraDeviceClient[0] (0xb40000789001d3c0) dump:
+  Device dump:
+    Device status: CONFIGURED
+Number of camera devices: 4
+Number of normal camera devices: 3
+Number of public camera devices visible to API1: 3
+    Device 0 maps to "0"
+    Device 1 maps to "1"
+    Device 2 maps to "3"
+  05-20 11:41:54 : REJECT device 7 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "7" available')
+  05-20 11:41:41 : REJECT device 7 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "7" available')
+  05-20 11:41:27 : REJECT device 7 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "7" available')
+  05-20 11:41:14 : REJECT device 7 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "7" available')
+  05-20 11:38:07 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:37:51 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:37:38 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:37:30 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:37:17 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:37:10 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:36:57 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:36:40 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:36:27 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:36:27 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:36:13 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:36:00 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:35:47 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:35:32 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:35:19 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:35:03 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:34:50 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:34:45 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:34:32 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:34:25 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 11:34:12 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 11:34:04 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 10:03:31 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 10:03:31 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 10:03:00 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 10:03:00 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 10:02:46 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 10:02:46 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-20 10:02:32 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-20 10:02:32 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:49:06 : REJECT device 5 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "5" available')
+  05-19 17:48:51 : REJECT device 5 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "5" available')
+  05-19 17:48:37 : REJECT device 5 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "5" available')
+  05-19 17:48:23 : REJECT device 5 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "5" available')
+  05-19 17:47:45 : REJECT device 6 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "6" available')
+  05-19 17:47:30 : REJECT device 6 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "6" available')
+  05-19 17:47:16 : REJECT device 6 client for package com.android.cts.verifier (PID 23747), reason: (Status(-8, EX_SERVICE_SPECIFIC): '4: validateConnectLocked:1966: No camera device with ID "6" available')
+  05-19 17:45:16 : DISCONNECT device 3 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:45:10 : CONNECT device 3 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:44:55 : DISCONNECT device 3 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:44:47 : CONNECT device 3 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:44:15 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:44:15 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:44:14 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:43:54 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:43:40 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:43:31 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:43:17 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:43:10 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:42:55 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:42:38 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:42:24 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:42:23 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:42:09 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:41:54 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:41:39 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:41:24 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:41:10 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:40:52 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:40:38 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:40:33 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:40:18 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:40:11 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:39:57 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:39:48 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 17:36:23 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 23747)
+  05-19 17:36:23 : CONNECT device 0 client for package com.android.cts.verifier (PID 23747, priority 0)
+  05-19 11:21:16 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 30530)
+  05-19 11:20:23 : CONNECT device 0 client for package com.android.cts.verifier (PID 30530, priority 0)
+  05-19 11:20:09 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 30530)
+  05-19 11:19:40 : CONNECT device 0 client for package com.android.cts.verifier (PID 30530, priority 0)
+  05-19 11:00:58 : CONNECT device 0 client for package com.android.cts.verifier (PID 30530, priority 0)
+  05-19 11:00:58 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 30530)
+  05-19 10:59:59 : CONNECT device 0 client for package com.android.cts.verifier (PID 30530, priority 200)
+  05-19 10:59:45 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 30530)
+  05-19 10:59:31 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 30530)
+  05-19 10:59:31 : CONNECT device 0 client for package com.android.cts.verifier (PID 30530, priority 50)
+  05-19 10:59:25 : DISCONNECT device 0 client for package com.android.cts.verifier (PID 30530)
+  05-19 10:59:25 : CONNECT device 0 client for package com.android.cts.verifier (PID 30530, priority 0)
+  05-18 21:14:10 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:14:01 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:13:42 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:13:42 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:13:26 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:13:26 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:12:58 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:12:13 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:11:59 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:11:58 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:11:39 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:11:39 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:11:20 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:11:08 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:10:54 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:10:29 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:10:13 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:10:05 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:09:51 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:09:42 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:09:23 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 21:09:23 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 21:08:49 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:59:18 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:58:51 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:58:41 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:58:27 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:58:27 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:48:06 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:47:47 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:47:26 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:47:13 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:47:06 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:46:41 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:46:40 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:46:26 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:44:42 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:44:28 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:44:22 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:44:04 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:41:52 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:41:38 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:39:48 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:39:34 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:39:34 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:39:33 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:39:33 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:39:19 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:39:19 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:39:05 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:37:16 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:37:03 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:34:43 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:34:25 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:34:09 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:33:51 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:33:36 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:33:18 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:33:07 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:32:53 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:32:41 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:32:23 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:32:08 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:31:54 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:31:43 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:31:29 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:31:13 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:30:56 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:30:45 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:30:31 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:30:31 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:30:03 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:30:03 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:29:45 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:28:50 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:28:37 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:28:21 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:28:03 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:27:04 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:27:02 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:26:47 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:26:45 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:25:58 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:25:44 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:25:33 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:25:19 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:24:23 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:24:10 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:23:53 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:23:39 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:23:27 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:23:14 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:23:05 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:22:47 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:22:09 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:21:55 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:21:49 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:21:36 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:20:43 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:20:29 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:20:24 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:20:10 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:20:03 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:19:49 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:19:43 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:19:30 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:19:22 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:19:08 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:18:24 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:18:11 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:17:58 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:17:44 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:17:33 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:17:19 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:17:07 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+  05-18 20:16:53 : DISCONNECT device 2 client for package com.android.cts.verifier (PID 18082)
+  05-18 20:16:44 : CONNECT device 2 client for package com.android.cts.verifier (PID 18082, priority 200)
+== Camera device 0 status 1 dynamic info: ==
+  Device 0 is closed, no client instance
+== Camera device 1 status 1 dynamic info: ==
+  Device 1 is closed, no client instance
+== Camera device 2 status 1 dynamic info: ==
+  Device 2 is closed, no client instance
+== Camera device 20 status 1 dynamic info: ==
+  Device 20 is closed, no client instance
+== Camera device 21 status 1 dynamic info: ==
+  Device 21 is closed, no client instance
+== Camera device 23 status 1 dynamic info: ==
+  Device 23 is closed, no client instance
+== Camera device 24 status 1 dynamic info: ==
+  Device 24 is closed, no client instance
+== Camera device 3 status 1 dynamic info: ==
+  Device 3 is closed, no client instance
+== Camera device 4 status 1 dynamic info: ==
+  Device 4 is closed, no client instance
+== Camera device 52 status 1 dynamic info: ==
+  Device 52 is closed, no client instance
+== Camera device 54 status 1 dynamic info: ==
+  Device 54 is closed, no client instance
+== Camera device 56 status 1 dynamic info: ==
+  Device 56 is closed, no client instance
+== Camera device 58 status 1 dynamic info: ==
+  Device 58 is closed, no client instance
+== Camera device 90 status 1 dynamic info: ==
+  Device 90 is closed, no client instance
+== Camera Provider HAL android.hardware.camera.provider.ICameraProvider/external/0-0 (v2.0, remote) static info: 0 devices: ==
+== Camera Provider HAL android.hardware.camera.provider.ICameraProvider/internal/0-1 (v2.0, remote) static info: 14 devices: ==
+== Camera HAL device device@1.1/internal/0 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+        [HIDL_DEVICE_3_5 ]
+        [HIDL_DEVICE_3_5 ]
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/0 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/1 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/1 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/2 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/2 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/3 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/3 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/4 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/4 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/20 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/20 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/21 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/21 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/23 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/23 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/24 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/24 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/52 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/52 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/54 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/54 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/56 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/56 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/58 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/58 (v1.3) dumpState: ==
+== Camera HAL device device@1.1/internal/90 (v1.3) static information: ==
+  Conflicting devices:
+        [HIDL_DEVICE_3_5 ]
+== Camera HAL device device@1.1/internal/90 (v1.3) dumpState: ==
+    0x80a80000 (deviceMemoryType) with type 0 (byte) defined in section org.quic.camera.deviceCapabilities
+    0x811d007f (dynamicShotDeviceInfo) with type 3 (int64) defined in section samsung.android.control
+    0x811d00da (deviceOrientation) with type 1 (int32) defined in section samsung.android.control
+== Device Injector Activity History ==
+== Camera device 0 dynamic info: ==
+  05-20 11:38:07 : Device 0 is open. Client instance dump:
+  CameraDeviceClient[0] (0xb40000789001d3c0) dump:
+  Device dump:
+    Device status: CONFIGURED
+     HAL device dump:
+Request Injector for device[0] dump

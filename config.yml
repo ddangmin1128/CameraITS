@@ -1,0 +1,18 @@
+TestBeds:
+  - Name: TEST_BED_TABLET_SCENES
+    Controllers:
+        AndroidDevice:
+          - serial: "R5KL309P2KR"
+            label: dut
+          - serial: "R32XB004ZLM"
+            label: tablet
+    TestParams:
+      brightness: 192
+      chart_distance: 22.0
+      debug_mode: "False"
+      lighting_cntl: "relay"
+      lighting_ch: 1
+      camera: 0,2
+      scene: <scene-name> # total : <scene-name>
+      foldable_device: "False"
+      chart_scaling: "None"
