@@ -19,6 +19,7 @@ import logging
 import os
 import os.path
 import re
+import signal
 import subprocess
 import sys
 import tempfile
@@ -81,6 +82,7 @@ LIVE_LOG_DIRNAME = 'its_live'
 LIVE_LOG_PREFIX = 'its_live'
 LIVE_LOG_DEBUG_NAME = f'{LIVE_LOG_PREFIX}.DEBUG'
 LIVE_LOG_INFO_NAME = f'{LIVE_LOG_PREFIX}.INFO'
+LIVE_STATE_NAME = 'current_run.json'
 
 # Scenes that can be automated through tablet display
 # Notes on scene names:
@@ -222,6 +224,36 @@ def _get_live_log_paths():
       os.path.join(live_log_dir, f'{live_log_prefix}.DEBUG'),
       os.path.join(live_log_dir, f'{live_log_prefix}.INFO'),
   )
+
+
+def _get_live_state_path():
+  """Returns the current CameraITS run state file path."""
+  live_log_dir = os.environ.get(
+      'ITS_LIVE_LOG_DIR',
+      os.path.join(tempfile.gettempdir(), LIVE_LOG_DIRNAME),
+  )
+  os.makedirs(live_log_dir, exist_ok=True)
+  return os.environ.get(
+      'ITS_LIVE_STATE_PATH',
+      os.path.join(live_log_dir, LIVE_STATE_NAME),
+  )
+
+
+def _write_live_state(state_path, payload):
+  """Writes the exhibition run state atomically."""
+  if not state_path:
+    return
+
+  state_dir = os.path.dirname(state_path)
+  if state_dir:
+    os.makedirs(state_dir, exist_ok=True)
+  state_payload = dict(payload)
+  state_payload['updatedAt'] = time.time()
+  tmp_path = f'{state_path}.tmp'
+  with open(tmp_path, 'w', encoding='utf-8') as state_file:
+    json.dump(state_payload, state_file, sort_keys=True)
+    state_file.write('\n')
+  os.replace(tmp_path, state_path)
 
 
 def _write_live_log_line(debug_file, info_file, line):
@@ -724,6 +756,48 @@ def main():
   live_logging_enabled = _is_live_log_enabled()
   live_debug_file = None
   live_info_file = None
+  live_state_path = _get_live_state_path() if live_logging_enabled else None
+  live_state = {
+      'state': 'running',
+      'phase': 'starting',
+      'pid': os.getpid(),
+      'runName': os.path.basename(topdir),
+      'runPath': topdir,
+      'startedAt': time.time(),
+      'cameraId': '',
+      'scene': '',
+      'test': '',
+      'outputPath': '',
+      'lastScene': '',
+      'lastTest': '',
+      'lastReturnCode': None,
+  }
+  live_state_finalized = False
+
+  def update_live_state(**updates):
+    live_state.update(updates)
+    _write_live_state(live_state_path, live_state)
+
+  def finalize_live_state(state, **updates):
+    nonlocal live_state_finalized
+    if live_state_finalized:
+      return
+    update_live_state(state=state, **updates)
+    live_state_finalized = True
+
+  def finalize_live_state_on_exit():
+    if not live_state_finalized:
+      finalize_live_state('aborted', phase='aborted')
+
+  def handle_live_state_signal(signum, unused_frame):
+    finalize_live_state('aborted', phase=f'signal_{signum}')
+    raise SystemExit(128 + signum)
+
+  if live_logging_enabled:
+    update_live_state()
+    atexit.register(finalize_live_state_on_exit)
+    signal.signal(signal.SIGTERM, handle_live_state_signal)
+    signal.signal(signal.SIGINT, handle_live_state_signal)
   if live_logging_enabled:
     live_debug_path, live_info_path = _get_live_log_paths()
     live_debug_file = open(live_debug_path, 'a', encoding='utf-8')
@@ -1085,6 +1159,18 @@ def main():
           process_env = os.environ.copy()
           process_env['PYTHONUNBUFFERED'] = '1'
           if live_logging_enabled:
+            update_live_state(
+                state='running',
+                phase='test_running',
+                cameraId=f'cam_id_{camera_id_str}',
+                scene=s,
+                test=test_name,
+                outputPath=mobly_scene_output_logs_path,
+                lastScene='',
+                lastTest='',
+                lastReturnCode=None,
+            )
+          if live_logging_enabled:
             _write_live_log_line(
                 live_debug_file,
                 live_info_file,
@@ -1123,6 +1209,17 @@ def main():
                 live_info_file,
                 (f'LIVE_LOG_END scene={s} camera=cam_id_{camera_id_str} '
                  f'test={test_name} returncode={output.returncode}'),
+            )
+            update_live_state(
+                state='running',
+                phase='between_tests',
+                cameraId=f'cam_id_{camera_id_str}',
+                scene='',
+                test='',
+                outputPath=mobly_scene_output_logs_path,
+                lastScene=s,
+                lastTest=test_name,
+                lastReturnCode=output.returncode,
             )
 
           # Parse mobly logs to determine PASS/FAIL(*)/SKIP & socket FAILs
@@ -1278,6 +1375,15 @@ def main():
       write_result(testbed_index, device_id, camera_id, results)
 
   logging.info('Test execution completed.')
+  if live_logging_enabled:
+    finalize_live_state(
+        'completed',
+        phase='completed',
+        cameraId='',
+        scene='',
+        test='',
+        outputPath='',
+    )
 
   # Power down tablet
   if tablet_id:
