@@ -238,7 +238,7 @@ fi
 
 # 수동 모드일 때 명령어를 미리 한 번만 입력받음
 if [[ "$CHOICE" == "2" ]]; then
-    USER_CMD="python3 tools/run_all_tests.py camera=0"
+    USER_CMD="python3 tools/run_all_tests.py camera=0 scenes=0"
     #read -r -p "  실행할 명령어 : " USER_CMD
     echo
     if [[ -z "$USER_CMD" ]]; then

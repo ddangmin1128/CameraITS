@@ -1,0 +1,21 @@
+MoblyParams:
+  LogPath: /tmp/CameraITS_jq_s1883/cam_id_0/scene0
+TestBeds:
+- Controllers:
+    AndroidDevice:
+    - label: dut
+      serial: R5KL309P2KR
+    - label: tablet
+      serial: R32XB004ZLM
+  Name: TEST_BED_TABLET_SCENES
+  TestParams:
+    brightness: 192
+    camera: '0'
+    chart_distance: 22.0
+    chart_scaling: None
+    debug_mode: 'False'
+    foldable_device: 'False'
+    lighting_ch: 1
+    lighting_cntl: relay
+    scene: scene0
+    scene_with_suffix: scene0
